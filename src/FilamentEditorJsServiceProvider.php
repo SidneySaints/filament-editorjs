@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace SidneySaints\FilamentEditorJs;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use SidneySaints\FilamentEditorJs\Commands\FilamentEditorJsCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class FilamentEditorJsServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('filament-editorjs')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_skeleton_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_filament-editorjs_table')
+            ->hasCommand(FilamentEditorJsCommand::class);
     }
 }
